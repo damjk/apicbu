@@ -70,6 +70,17 @@ public final class Router {
          get("/ABMCBUAPI", ABMCBUAPI::abm, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
          get("/ABMCBUAPI/alta", ABMCBUAPI::abmAlta, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
          get("/ABMCBUAPI", ABMCBUAPI::abm, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
+         get("/ABMCBUAPI/baja", ABMCBUAPI::abm2, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
+         post("/ABMCBUAPI/baja", ABMCBUAPI::bajaCBU);
+         
+         //GALLERY
+         get("/mortalkombat", Galeria::Mortalkombat, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
+         get("/godofwar", Galeria::Godofwar, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
+         get("/playstation", Galeria::Playstation, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
+         get("/ps3", Galeria::Ps3, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
+         get("/ps4", Galeria::Ps4, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
+         get("/accesorios", Galeria::Accesorios, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
+         
          
     }
 
