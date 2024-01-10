@@ -70,8 +70,8 @@ public final class Router {
          get("/ABMCBUAPI", ABMCBUAPI::abm, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
          get("/ABMCBUAPI/alta", ABMCBUAPI::abmAlta, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
          get("/ABMCBUAPI", ABMCBUAPI::abm, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
-         get("/ABMCBUAPI/baja", ABMCBUAPI::abm2, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
-         post("/ABMCBUAPI/baja", ABMCBUAPI::bajaCBU);
+   //      get("/ABMCBUAPI/baja", ABMCBUAPI::abm2, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
+     //    post("/ABMCBUAPI/baja", ABMCBUAPI::bajaCBU);
          
          //GALLERY
          get("/mortalkombat", Galeria::Mortalkombat, CUSTOM_HANDLEBARS_TEMPLATE_ENGINE);
